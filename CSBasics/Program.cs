@@ -9,7 +9,24 @@
             string favouriteFilm = "Matrix";
             favouriteFilm = "High School Musical";
             printGreeting("Charlie");
-            Console.WriteLine(methodName(1, 2));
+
+            bool stringLonger = isStringLonger("powershell", 20);
+
+
+            Book newBook = new Book("CSBasics", 100);
+
+            Console.WriteLine(newBook.CurrentPage);
+            Console.WriteLine(newBook.Title);
+
+            newBook.TurnPage();
+            newBook.TurnPage();
+            newBook.TurnPage();
+            newBook.TurnPage();
+            newBook.TurnPage();
+            newBook.TurnPage();
+            newBook.TurnPage();
+
+            Console.WriteLine(newBook.CurrentPage);
 
         }
         private static void printGreeting(string name)
@@ -20,5 +37,13 @@
         {
             return parameterOne - parameterTwo;
         }
+        private static bool isStringLonger(string word, int number)
+        {
+            return word.Length > number;
+        }
+
+        
+
+        
     }
 }
