@@ -8,11 +8,12 @@ namespace CSBasics
 {
     public class Book
     {
-        public string Title;
+        public readonly string Title;
 
-        public int Pages;
+        public readonly int Pages;
 
-        public int CurrentPage = 1;
+        //public readonly int CurrentPage = 1;
+        public int CurrentPage { get; private set; } = 1;
 
         public Book(string title, int pages)
         {
